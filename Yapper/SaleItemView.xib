@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaleItemView" customModule="CarousellChat" customModuleProvider="target">
+            <connections>
+                <outlet property="itemImageView" destination="TLJ-KE-QPT" id="1mX-JO-J4F"/>
+                <outlet property="itemNameLabel" destination="HBV-0s-m7N" id="VFX-0I-YUV"/>
+                <outlet property="itemPriceLabel" destination="bR6-Aq-7BR" id="PoL-Ej-RNA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34j-uE-zvu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLJ-KE-QPT">
+                            <rect key="frame" x="0.0" y="0.0" width="115" height="115"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="TLJ-KE-QPT" secondAttribute="height" multiplier="1:1" id="ufH-3B-ml9"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBV-0s-m7N">
+                            <rect key="frame" x="131" y="8" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bR6-Aq-7BR">
+                            <rect key="frame" x="131" y="47" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bR6-Aq-7BR" secondAttribute="bottom" constant="8" id="2yb-Mg-Lna"/>
+                        <constraint firstItem="TLJ-KE-QPT" firstAttribute="leading" secondItem="34j-uE-zvu" secondAttribute="leading" id="3Pn-1C-a8s"/>
+                        <constraint firstItem="bR6-Aq-7BR" firstAttribute="leading" secondItem="TLJ-KE-QPT" secondAttribute="trailing" constant="16" id="4F3-Xm-b9I"/>
+                        <constraint firstAttribute="trailing" secondItem="bR6-Aq-7BR" secondAttribute="trailing" priority="750" constant="16" id="PvR-Xm-in9"/>
+                        <constraint firstAttribute="trailing" secondItem="HBV-0s-m7N" secondAttribute="trailing" priority="750" constant="16" id="VHy-vw-9o7"/>
+                        <constraint firstItem="TLJ-KE-QPT" firstAttribute="height" secondItem="34j-uE-zvu" secondAttribute="height" id="bKJ-I4-OYb"/>
+                        <constraint firstItem="HBV-0s-m7N" firstAttribute="leading" secondItem="TLJ-KE-QPT" secondAttribute="trailing" constant="16" id="d5c-MR-opH"/>
+                        <constraint firstAttribute="width" secondItem="HBV-0s-m7N" secondAttribute="width" multiplier="1:0.8" id="ieB-CH-AAH"/>
+                        <constraint firstItem="TLJ-KE-QPT" firstAttribute="top" secondItem="34j-uE-zvu" secondAttribute="top" id="nLN-J4-1W4"/>
+                        <constraint firstItem="HBV-0s-m7N" firstAttribute="top" secondItem="34j-uE-zvu" secondAttribute="top" constant="8" id="qoi-y8-YtF"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ieB-CH-AAH"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="34j-uE-zvu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6Do-3y-q8r"/>
+                <constraint firstAttribute="bottom" secondItem="34j-uE-zvu" secondAttribute="bottom" id="RQp-WO-Zlb"/>
+                <constraint firstItem="34j-uE-zvu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wa1-eM-Jm8"/>
+                <constraint firstAttribute="trailing" secondItem="34j-uE-zvu" secondAttribute="trailing" id="cLg-cr-LC2"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
